@@ -1,0 +1,15 @@
+.header{
+    background-color: #B4002D;
+}
+.header-wrapper{
+    display: flex;
+}
+.custom-tooltip{
+    display: none;
+}
+.header-list{
+    display: flex;
+}
+.header-link{
+    text-decoration: none;
+}

@@ -1,6 +1,6 @@
 import './noPage.css'
 
-export function NoPage(){
+export default function NoPage(){
     return(
         <div className="error">
 

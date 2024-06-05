@@ -1,9 +1,12 @@
 import './mainPage.css'
+import { PageTemplate } from '../../components/template/template'
 
-export function MainPage(){
+export default function MainPage(){
     return(
         <div className="main">
+            <PageTemplate>
 
+            </PageTemplate>
         </div>
     )
 }
