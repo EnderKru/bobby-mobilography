@@ -1,3 +1,41 @@
 .footer{
     background-color: #B4002D;
 }
+.footer-logo img{
+    width: 200px;
+}
+.footer-content{
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.footer-info{
+    display: block;
+}
+.footer-info h2{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.numbers p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.media-icons{
+    margin-top: 20px;
+    border-top: 5px solid white;
+    padding-top: 15px;
+}
+.media-icons a{
+    margin-right: 15px;
+}
+.media-icons a img{
+    width: 50px;
+}
+
+
+
+
