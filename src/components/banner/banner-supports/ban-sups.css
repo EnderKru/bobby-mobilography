@@ -1,0 +1,20 @@
+.ban-sups{
+    padding: 100px 0;
+}
+.ban-sups-content{
+    display: flex;
+    justify-content: space-around;
+}
+.bobby{
+    width: 10%;
+}
+.ban-sups-content img{
+    width: 20%;
+}
+.bobby-logo{
+    display: flex;
+    justify-content: center;
+}
+.bobby-logo img{
+    width: 50%;
+}

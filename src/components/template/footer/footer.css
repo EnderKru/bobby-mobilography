@@ -28,6 +28,7 @@
     margin-top: 20px;
     border-top: 5px solid white;
     padding-top: 15px;
+    width: 100%;
 }
 .media-icons a{
     margin-right: 15px;
@@ -36,6 +37,43 @@
     width: 50px;
 }
 
+@media (max-width: 1050px){
+    .footer-info{
+        width: 200px;
+    }
+    .footer-info h2{
+        max-width: 300px;
+    }
+    .media-icons{
+        width: fit-content;
+    }
+}
+@media (max-width: 768px){
+    .footer-info{
+        width: 150px;
+    }
+    .footer-info h2{
+        font-size: 18px;
+    }
+    .numbers p{
+        font-size: 16px;
 
+    }
+    .media-icons a img{
+        width: 35px;
+    }
+}
 
+@media (max-width:470px){
+    .footer-logo img{
+        width: 140px;
+    }
+    .footer-info h2{
+        font-size: 14px;
+    }
+    .numbers p{
+        font-size: 12px;
 
+    }
+    
+}

@@ -21,3 +21,9 @@ button:active {
   button {
     cursor: pointer;
   }
+
+@media (max-width:470px){
+    .conteiner{
+        padding: 0 20px;
+    }
+}
