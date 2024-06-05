@@ -1,7 +1,7 @@
 import './footer.css'
 import logo from '../../../assets/image/logo-footer.svg'
-import facebook from '../../../assets/image/facebook.svg'
-import youtube from '../../../assets/image/youtube.svg'
+import facebook from '../../../assets/image/telegram.svg'
+import youtube from '../../../assets/image/whatsapp.svg'
 import insta from '../../../assets/image/instagram.svg'
 
 export function Footer(){
