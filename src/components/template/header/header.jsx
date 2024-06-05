@@ -21,22 +21,22 @@ export  function Header() {
               <li className="header-item">
                 <a href="/" >УЧАСТВОВАТЬ</a>
               </li>
-              <li className="header-item">
+              {/* <li className="header-item">
                 <a href="/" >УЧАСТНИКИ</a>
-              </li>
+              </li> */}
 
               <li className="header-item">
                 <a href="/" >СВЯЗАТЬСЯ С НАМИ</a>
               </li>
             </ul>   
-            <div className="custom-tooltip">
+            {/* <div className="custom-tooltip">
             <img src={burger} alt="Mini Photo" className="mini-photo" id="person" />
               <div className="tooltiptext">
                 <a href='' className='burger-item'>ОБЩАЯ ИНФОРМАЦИЯ</a>
                 <a href='' className='burger-item'>УЧАСТНИКИ</a>
                 <a href='' className='burger-item'>СВЯЗАТЬСЯ С НАМИ</a>
               </div>
-          </div>
+          </div> */}
           </div>
 
         </div>

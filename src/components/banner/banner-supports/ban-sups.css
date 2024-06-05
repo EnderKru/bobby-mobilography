@@ -18,3 +18,8 @@
 .bobby-logo img{
     width: 50%;
 }
+@media (max-width:650px){
+    .ban-sups{
+        padding: 60px 0;
+    }
+}
