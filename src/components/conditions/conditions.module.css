@@ -1,0 +1,44 @@
+
+
+.conditions{
+    background: url("../../assets/image/conditions_img/camera.png") no-repeat;
+    width: 100%;
+    padding: 154px 0;
+}
+
+.title{
+    font-family: Montserrat;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 51.2px;
+    text-align: left;
+    margin-top: 74px;
+    margin-bottom: 62px;
+}
+.part{
+    width: 780px;
+    font-family: Montserrat;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 32.91px;
+    text-align: left;
+    text-indent: -38px;
+    margin-left: 38px;
+
+
+}
+
+.button{
+    margin-top: 53px;
+    width: 666px;
+    height: 85px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 42.24px;
+    background: none;
+    border-radius: 90px;
+    border: #B4002D solid 10px;
+
+}
