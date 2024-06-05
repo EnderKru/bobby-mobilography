@@ -19,23 +19,20 @@ export  function Header() {
           <div className="header-menu">
             <ul className="header-list">
               <li className="header-item">
-                <a href="/" className="header-link">ОБЩАЯ ИНФОРМАЦИЯ</a>
+                <a href="/" >УЧАСТВОВАТЬ</a>
               </li>
               <li className="header-item">
-                <a href="/" className="header-link">СМОТРЕТЬ</a>
+                <a href="/" >УЧАСТНИКИ</a>
               </li>
+
               <li className="header-item">
-                <a href="/" className="header-link">УЧАСТНИКИ</a>
-              </li>
-              <li className="header-item">
-                <a href="/" className="header-link">СВЯЗАТЬСЯ С НАМИ</a>
+                <a href="/" >СВЯЗАТЬСЯ С НАМИ</a>
               </li>
             </ul>   
             <div className="custom-tooltip">
             <img src={burger} alt="Mini Photo" className="mini-photo" id="person" />
               <div className="tooltiptext">
                 <a href='' className='burger-item'>ОБЩАЯ ИНФОРМАЦИЯ</a>
-                <a href='' className='burger-item'>СМОТРЕТЬ</a>
                 <a href='' className='burger-item'>УЧАСТНИКИ</a>
                 <a href='' className='burger-item'>СВЯЗАТЬСЯ С НАМИ</a>
               </div>
