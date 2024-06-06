@@ -1,8 +1,9 @@
 .main-container {
-    background-size: cover;
-    width: 100vw;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* width: 100vw;
     min-width: 100%;
-    height: 100%;
+    height: 100%; */
     color: white;
     background-position: center;
   }
@@ -17,9 +18,7 @@
   .hide {
     display: none;
   }
-  .img{
-    background: url(/svg/cola\ model.svg);
-  }
+
   .content-1 {
     display: flex;
     flex-direction: column;
@@ -76,10 +75,15 @@
   }
   @media (max-width: 950px) {
     
-    .main-container{
+    /* .main-container{
       transform: scale(0.8);
       background-size: cover;
-    }
+    } */
+    .content-2 {
+        margin: 120px 0;
+        font-size: 70px;
+        font-weight: 800;
+      }
   }
   
   @media (max-width: 768px) {
