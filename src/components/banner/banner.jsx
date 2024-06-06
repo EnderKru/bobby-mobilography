@@ -7,10 +7,10 @@ export function Banner(){
     return(
         <>
         <BanSups/>
-         <div className="banner" style={{ backgroundImage: `url(${backg})`}}>
+         <div className="banner"  style={{ backgroundImage: `url(${backg})`}}>
             <div className="conteiner">
-                <div className="banner-content">
-                    <div className="tittle">
+                <div className="banner-content" >
+                    <div className="tittle" id='banner'>
                         <h2>
                         ТУРНИР ПО
                         </h2>
