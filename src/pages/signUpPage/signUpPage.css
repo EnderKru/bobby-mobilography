@@ -6,7 +6,14 @@
     background: url('../../assets/colabackground.svg') ;
     background-size: cover;
 }
-
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+.to-back{
+    font-weight: 500;
+    font-size: 24px;
+}
 .registration-container {
     display: flex;
     justify-content: center;

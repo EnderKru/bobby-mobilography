@@ -1,6 +1,7 @@
 import { BanSups } from './banner-supports/ban-sups'
 import './banner.css'
 import backg from '../../assets/backgraunds/backgr-banner.svg'
+import { NavLink } from 'react-router-dom'
 
 export function Banner(){
     return(
@@ -17,7 +18,10 @@ export function Banner(){
                         MOBILOGRAPHY
                         </h1>
                     </div>
-                    <button>УЧАСТВОВАТЬ</button>
+                    <NavLink to='/signup'>
+                        <button>УЧАСТВОВАТЬ</button>
+                    </NavLink>
+
                 </div>
             </div>
         </div>

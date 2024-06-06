@@ -55,27 +55,17 @@ const RegistrationForm = () => {
     return (
         <div className="back" style={{ backgroundImage: `url(${back})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundSize: 'cover' }}>
             <header className="header">
-                <div className="container">
+                <div className="conteiner">
                     <div className="header-wrapper">
                         <div className="header-logo">
                             <NavLink to='/' style={{ textDecoration: 'none', color: 'white' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-left" viewBox="0 0 16 16">
                                     <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-                                </svg><span>На главную</span>
+                                </svg>
+                                <span className='to-back'>На главную</span>
                             </NavLink>
                         </div>
                         <div className="header-menu">
-                            <ul className="header-list">
-                                <li className="header-item">
-                                    <a href="/">УЧАСТВОВАТЬ</a>
-                                </li>
-                                <li className="header-item">
-                                    <a href="/">УЧАСТНИКИ</a>
-                                </li>
-                                <li className="header-item">
-                                    <a href="/">СВЯЗАТЬСЯ С НАМИ</a>
-                                </li>
-                            </ul>
                             <div className="custom-tooltip">
                                 <img src={burger} alt="Menu" className="mini-photo" id="person" />
                                 <div className="tooltiptext">
