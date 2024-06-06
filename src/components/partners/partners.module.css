@@ -64,11 +64,15 @@
 
     .logos{
         justify-content: center;
-        gap: 20px;
+
         padding: 40px 0;
+    }
+    .partner{
+        width: 45%;
     }
     .partner img{
         width: 100%;
+
     }
     .redBlock{
         padding: 20px 0;

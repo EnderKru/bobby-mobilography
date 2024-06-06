@@ -46,8 +46,14 @@
     background: none;
     border-radius: 90px;
     border: #B4002D solid 10px;
-
+    transition: 0.5s;
 }
+
+.button:hover{
+    background-color: #B4002D;
+}
+
+
 
 @media (max-width:768px) {
     .conditions__inner{

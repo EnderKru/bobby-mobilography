@@ -20,6 +20,12 @@
     font-weight: 600;
     color: #fff;
     background-color: transparent;
+    transition: 0.5s;
+}
+
+.banner-content button:hover{
+    background: #E1B52B;
+
 }
 .tittle{
     margin-bottom: 350px;
