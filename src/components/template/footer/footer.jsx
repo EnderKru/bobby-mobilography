@@ -6,7 +6,7 @@ import insta from '../../../assets/image/instagram.svg'
 
 export function Footer(){
     return(
-        <div className="footer">
+        <div className="footer" id = 'footer'>
             <div className="conteiner">
                 <div className="footer-content">
                     <div className="footer-logo">
