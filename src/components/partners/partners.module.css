@@ -9,10 +9,10 @@
 }
 
 .title span{
-    font-family: Montserrat;
+
     font-size: 40px;
     font-weight: 700;
-    line-height: 42.24px;
+    /* line-height: 42.24px; */
     text-align: left;
 }
 
