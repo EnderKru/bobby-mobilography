@@ -1,0 +1,60 @@
+
+
+.title{
+    text-align: center;
+    padding: 93px 0 60px;
+}
+
+.title span{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42.24px;
+    text-align: left;
+}
+
+.title .red_text{
+    color: #B4002D;
+    margin-left: 10px;
+}
+
+
+.redBlock{
+    background-color: #B4002D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 41px 0;
+}
+
+.sanarip{
+    font-family: Montserrat Alternates;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42.24px;
+    text-align: center;
+}
+
+.min{
+    font-family: Montserrat Alternates;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+}
+
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.partner{
+  transform: scale(0.7);
+}
+
+
+

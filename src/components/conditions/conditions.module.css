@@ -4,43 +4,75 @@
     background: url("../../assets/image/conditions_img/camera.png") no-repeat;
     width: 100%;
     padding: 154px 0;
-    background-position: center;
     background-size: cover;
+    background-position: center;
 }
 
 .title{
     font-family: Montserrat;
-    font-size: 42px;
+    font-size: 33px;
     font-weight: 700;
     line-height: 51.2px;
-    text-align: left;
+    text-align: center;
     margin-top: 74px;
     margin-bottom: 62px;
 }
+.img{
+    width: 30%;
+}
+
 .part{
-    width: 780px;
+    width: 70%;
     font-family: Montserrat;
-    font-size: 27px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 32.91px;
     text-align: left;
-    text-indent: -38px;
-    margin-left: 38px;
+    text-indent: -27px;
+    margin-left: 40px;
 
 
 }
 
 .button{
     margin-top: 53px;
-    width: 666px;
-    height: 85px;
+    width: 70%;
+    height: 65px;
     color: white;
     font-family: Montserrat;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 42.24px;
     background: none;
     border-radius: 90px;
     border: #B4002D solid 10px;
 
+}
+
+@media (max-width:768px) {
+    .conditions__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+        text-align: left;
+    }
+    .button{
+        font-size: 60%;
+    }
+    .title{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .conditions{
+        padding: 50px 0;
+    }
+    .part{
+        width: 100%;
+        margin: 0;
+        text-indent: 0;
+        font-size: 15px;
+        line-height: 20px;
+    }
 }

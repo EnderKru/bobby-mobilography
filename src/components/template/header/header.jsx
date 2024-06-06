@@ -1,7 +1,7 @@
 
 import './header.css';
 import logo from '../../../assets/image/mobilography-logo.svg';
-import burger from '../../../assets/image/burger-menu.svg'
+import burger from '../../../assets/image/lalafo.svg'
 import { NavLink } from 'react-router-dom';
 
 
