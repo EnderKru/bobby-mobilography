@@ -4,6 +4,8 @@
     background: url("../../assets/image/conditions_img/camera.png") no-repeat;
     width: 100%;
     padding: 154px 0;
+    background-position: center;
+    background-size: cover;
 }
 
 .title{
