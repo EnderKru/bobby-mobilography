@@ -8,7 +8,7 @@ export const PageTemplate = ({children}) => {
     <div>
       <Header />
       {children}
-
+      <Footer/>
       
     </div>
   )

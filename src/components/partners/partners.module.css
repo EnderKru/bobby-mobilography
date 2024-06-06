@@ -3,6 +3,9 @@
 .title{
     text-align: center;
     padding: 93px 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .title span{
@@ -50,10 +53,26 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    padding: 104px 0 73px;
+
+}
+.partner{
+    transform: scale(0.7);
 }
 
-.partner{
-  transform: scale(0.7);
+@media (max-width:768px) {
+
+    .logos{
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 0;
+    }
+    .partner img{
+        width: 100%;
+    }
+    .redBlock{
+        padding: 20px 0;
+    }
 }
 
 

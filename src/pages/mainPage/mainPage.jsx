@@ -14,6 +14,8 @@ export default function MainPage(){
                 <Timer/>
                 <Cola/>
                 <Conditions/>
+
+                <Partners/>
             </PageTemplate>
         </div>
     )
