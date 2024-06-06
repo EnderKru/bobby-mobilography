@@ -10,7 +10,7 @@ export default function MainPage(){
             <PageTemplate>
                 <Banner/>
                 <Conditions/>
-
+                <Partners/>
             </PageTemplate>
         </div>
     )

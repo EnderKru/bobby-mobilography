@@ -13,7 +13,7 @@
     font-size: 33px;
     font-weight: 700;
     line-height: 51.2px;
-    text-align: center;
+    text-align: left;
     margin-top: 74px;
     margin-bottom: 62px;
 }
@@ -36,7 +36,7 @@
 
 .button{
     margin-top: 53px;
-    width: 70%;
+    width: 50%;
     height: 65px;
     color: white;
     font-family: Montserrat;
@@ -60,10 +60,12 @@
     }
     .button{
         font-size: 60%;
+        width: 90%;
     }
     .title{
         margin-top: 30px;
         margin-bottom: 30px;
+        text-align: center;
     }
     .conditions{
         padding: 50px 0;
