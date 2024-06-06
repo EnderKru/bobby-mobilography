@@ -1,125 +1,154 @@
 .container-n {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 80vh; Центрирование по вертикали */
-    flex-direction: column; /* Направление flex-контейнера на столбец */
-    z-index: 10;
-    position: relative;
-    width: 100%;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 80vh; Центрирование по вертикали */
+  flex-direction: column; /* Направление flex-контейнера на столбец */
+  z-index: 10;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content-nt {
+  /* width: 90%; */
+  /* height: 43px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 5vmax;
+  font-weight: 700;
+  /* line-height: 42.24px; */
+  text-align: left;
+  margin-bottom: 2rem; /* Отступ вниз */
+  color: white;
+}
+
+.timer-n {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  color: white;
+  border-top: 5px solid white; /* Граница сверху */
+  border-bottom: 5px solid white;
+  width: 70%;
+}
+.timersEdin {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  width: 25%;
+}
+.timersEdin > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.doub {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-left: 10px;
+  color: #b4002d;
+}
+.sapn-tt {
+  font-size: 35px;
+  color: #fbb72d;
+}
+#days,
+#hours {
+  font-size: 5rem;
+  font-weight: 800;
+}
+#minutes,
+#seconds {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.purple-n {
+  color: #b4002d;
+  margin-left: 10px;
+}
+
+.countdown-n {
+  width: 100vmax; /* Ширина */
+  height: auto; /* Высота */
+  font-size: 5rem; /* Размер шрифта */
+  display: flex;
+  justify-content: space-between; /* Распределение по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+}
+
+.countdown-n div {
+  width: 100vmax; /* Ширина */
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+.time-unit-n {
+  font-size: 73px; /* Размер шрифта для единиц времени */
+}
+
+@media (max-width: 950px) {
+  .main-containerT {
+    transform: scale(0.8);
+    background-size: cover;
   }
- 
- 
-  .content-n {
-    /* width: 1343px; */
-    /* height: 43px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 68px;
-    font-weight: 700;
-    padding-top: 100px;
-    /* line-height: 42.24px; */
-    text-align: left;
-    margin-bottom: 100px; /* Отступ вниз */
-    color: white;
-  }
-  
+}
+
+@media (max-width: 768px) {
   .timer-n {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    border-top: 5px solid white; /* Граница сверху */
-    border-bottom: 5px solid white;
+    width: 90%;
   }
-  .doub {
-    font-size: 120px;
-    font-weight: 600;
-    margin-left: 10px;
-    color: #da195d;
+  .main-containerT {
+    transform: scale(0.6);
+    background-size: cover;
+    background-position: center;
   }
-  .sapn-tt {
-    font-size: 35px;
-    color: #fbb72d;
+  .main-content {
+    flex-direction: column;
   }
+  .content-nt {
+    flex-direction: column;
+    /* font-size: 3vmax; */
+  }
+  .doub,
   #days,
-  #hours {
-    font-size: 90px;
-    font-weight: 800;
-  }
+  #hours,
   #minutes,
   #seconds {
-    font-size: 90px;
-    font-weight: 800;
+    font-size: 3rem;
   }
-  
-  .purple-n {
-    color: #da195d;
-    margin-left: 10px;
+  .sapn-tt {
+    font-size: 3vmax;
   }
-  
-  .countdown-n {
-    width: 706px; /* Ширина */
-    height: 252px; /* Высота */
-    font-size: 73px; /* Размер шрифта */
-    display: flex;
-    justify-content: space-between; /* Распределение по горизонтали */
-    align-items: center; /* Выравнивание по вертикали */
+}
+@media (max-width: 460px) {
+  .doub,
+  #days,
+  #hours,
+  #minutes,
+  #seconds {
+    font-size: 2rem;
   }
-  
-  .countdown-n div {
-    text-align: center; /* Выравнивание текста по центру */
+  .sapn-tt {
+    font-size: 2vmax;
   }
-  
-  .time-unit-n {
-    font-size: 73px; /* Размер шрифта для единиц времени */
+  .main-containerT {
+    transform: scale(0.4);
   }
-  
-  @media (max-width: 950px) {
-    .container-n {
-      transform: scale(0.8);
-    }
-    .main-container{
-      transform: scale(0.8);
-      background-size: cover;
-    }
+  .content-nt {
+    font-size: 4vmax;
   }
-  
-  @media (max-width: 768px) {
-    .container-n {
-      transform: scale(0.6);
-    }
-    .main-container{
-      transform: scale(0.6);
-      background-size: cover;
-      background-position: center;
-    }
-    .main-content{
-      flex-direction: column;
-    }
-    .content-n {
-      flex-direction: column;
-    }
+}
+
+@media (max-width: 350px) {
+  .main-containerT {
+    transform: scale(0.3);
   }
-  @media (max-width: 460px) {
-    .container-n {
-      transform: scale(0.4);
-    }
-    .main-container{
-      transform: scale(0.4);
-    }
-  }
-  
-  @media (max-width: 350px) {
-    .container-n {
-      transform: scale(0.3);
-    }
-    .main-container{
-      transform: scale(0.3);
-    }
-  }
+}
