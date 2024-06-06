@@ -1,8 +1,9 @@
-/* RegistrationForm.css */
-body {
+
+.back{
     margin: 0;
+    padding: 0;
     font-family: Montserrat, sans-serif;
-    background: url('../../assets/colabackground.svg') no-repeat center center fixed;
+    background: url('../../assets/colabackground.svg') ;
     background-size: cover;
 }
 
