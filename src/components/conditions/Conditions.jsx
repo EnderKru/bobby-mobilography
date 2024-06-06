@@ -14,7 +14,7 @@ function Conditions(props) {
 
                     <li className={styles.part}>Участвовать может каждый, абсолютно <br/> бесплатно</li>
                     <li className={styles.part}>Участники будут должны создать 30-секундный <br/> рекламный ролик о напитке Coca-Cola</li>
-                    <li className={styles.part}>После завершения съемки рекламного ролика, отправьте его через этот веб-сайт</li>
+                    <li className={styles.part}>После завершения съемки рекламного ролика, <br/> отправьте его через этот веб-сайт</li>
                     <button className={styles.button}>
                         CТАТЬ УЧАСТНИКОМ
                     </button>
