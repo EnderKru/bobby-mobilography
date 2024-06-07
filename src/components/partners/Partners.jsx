@@ -19,7 +19,7 @@ function Partners(props) {
                             <img src={logo} alt="logo"/>
                         </div>
                         <h4 className={styles.sanarip}>
-                            санарип
+                            САНАРИП
                         </h4>
                         <p className={styles.min}>
                             министерства цифрового развития кыргызстана
