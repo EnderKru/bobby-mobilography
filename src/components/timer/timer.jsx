@@ -54,7 +54,7 @@ export function Timer() {
         </div>
         <div className="timersEdin">
           <div>
-            <span id="seconds">00</span> <span class="doub">:</span>
+            <span id="seconds">00</span>
           </div>
           <span class="sapn-tt">секунд</span>
         </div>

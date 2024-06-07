@@ -1,4 +1,5 @@
 import './footer.css'
+import diglogo from '../../../assets/image/digitallogo.svg'
 import logo from '../../../assets/image/logo-footer.svg'
 import facebook from '../../../assets/image/telegram.svg'
 import youtube from '../../../assets/image/whatsapp.svg'
@@ -10,7 +11,8 @@ export function Footer(){
             <div className="conteiner">
                 <div className="footer-content">
                     <div className="footer-logo">
-                        <img src={logo} alt="logos" className="" />
+                        <img src={logo} alt="logos" className="mgt" />
+                        <img src={diglogo} alt="logos" className="dig" />
                     </div>
                     <div className="footer-info">
                         <h2>Для связи по комерческим вопросам</h2>

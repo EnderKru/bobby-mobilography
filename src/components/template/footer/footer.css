@@ -1,8 +1,16 @@
 .footer{
     background-color: #B4002D;
 }
-.footer-logo img{
-    width: 200px;
+.footer-logo{
+    display: flex;
+    flex-direction: column ;
+}
+.mgt{
+    width: 250px;
+    margin-bottom: 10px;
+}
+.dig{
+    width: 150px;
 }
 .footer-content{
     display: flex;
@@ -65,15 +73,22 @@
 }
 
 @media (max-width:470px){
-    .footer-logo img{
+    .mgt{
         width: 140px;
+    }
+    .dig{
+    width: 100px;
     }
     .footer-info h2{
         font-size: 14px;
+        margin-bottom: 10px;
     }
     .numbers p{
         font-size: 12px;
 
+    }
+    .media-icons{
+        margin-top: 8px;
     }
     
 }
