@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
 
 
 .title{
@@ -33,16 +34,14 @@
 }
 
 .sanarip{
-    font-family: Montserrat Alternates;
-    font-size: 28px;
+    font-family: 'Montserrat Alternates', sans-serif;    font-size: 28px;
     font-weight: 700;
     line-height: 42.24px;
     text-align: center;
 }
 
 .min{
-    font-family: Montserrat Alternates;
-    font-size: 18px;
+    font-family: 'Montserrat Alternates', sans-serif;    font-size: 18px;
     font-weight: 700;
     line-height: 25px;
     text-align: center;
