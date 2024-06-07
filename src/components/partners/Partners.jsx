@@ -19,7 +19,7 @@ function Partners(props) {
                             <img src={logo} alt="logo"/>
                         </div>
                         <h4 className={styles.sanarip}>
-                            санарип
+                            САНАРИП
                         </h4>
                         <p className={styles.min}>
                             министерства цифрового развития кыргызстана
@@ -31,8 +31,8 @@ function Partners(props) {
                     <div className={styles.partner}><img src={bobby} alt="logo"/></div>
                     <div className={styles.partner}><img src={kia} alt="logo"/></div>
                     <div className={styles.partner}><img src={coca} alt="logo"/></div>
-                    <div className={styles.partner}><img src={lalafo} alt="logo"/></div>
                     <div className={styles.partner}><img src={samsa} alt="logo"/></div>
+                    <div className={styles.partner}><img src={lalafo} alt="logo"/></div>
                 </div>
             </div>
         </div>

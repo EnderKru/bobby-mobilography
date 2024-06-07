@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './conditions.module.css';
 import logo from  "../../assets/image/conditions_img/logo.png"
+import { NavLink } from 'react-router-dom';
 
 function Conditions(props) {
     return (
@@ -15,9 +16,11 @@ function Conditions(props) {
                     <li className={styles.part}>Участвовать может каждый, абсолютно <br/> бесплатно</li>
                     <li className={styles.part}>Участники будут должны создать 30-секундный <br/> рекламный ролик о напитке Coca-Cola</li>
                     <li className={styles.part}>После завершения съемки рекламного ролика, <br/> отправьте его через этот веб-сайт</li>
+                    <NavLink to="/signup">
                     <button className={styles.button}>
                         CТАТЬ УЧАСТНИКОМ
                     </button>
+                    </NavLink>
 
                 </div>
             </div>

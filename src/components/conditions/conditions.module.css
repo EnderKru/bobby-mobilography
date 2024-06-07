@@ -36,13 +36,12 @@
 
 .button{
     margin-top: 53px;
-    width: 50%;
-    height: 65px;
+    margin-left: 20px;
+    padding: 20px 100px;
     color: white;
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 700;
-    line-height: 42.24px;
     background: none;
     border-radius: 90px;
     border: #B4002D solid 10px;
@@ -57,21 +56,30 @@
 
 @media (max-width:768px) {
     .conditions__inner{
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; */
     }
     .title{
         text-align: left;
     }
     .button{
-        font-size: 60%;
-        width: 90%;
+        margin-top: 40px;
+
+        padding: 13px 40px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        background: none;
+        border-radius: 50px;
+        border: #B4002D solid 7px;
+        transition: 0.5s;
     }
     .title{
         margin-top: 30px;
         margin-bottom: 30px;
-        text-align: center;
+        /* text-align: center; */
     }
     .conditions{
         padding: 50px 0;
