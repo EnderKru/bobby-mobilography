@@ -79,5 +79,20 @@
     }
 }
 
+@media (max-width: 1420px) and (min-width: 768px) {
+    .logos{
+
+        align-items: center;
+    }
+
+    .partner img{
+        width: 100%;
+    }
+    .partner{
+        width: 18%;
+    }
+
+}
+
 
 
