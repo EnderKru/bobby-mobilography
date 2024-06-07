@@ -1,108 +1,180 @@
-
-.back{
-    margin: 0;
-    padding: 0;
-    font-family: Montserrat, sans-serif;
-    background: url('../../assets/colabackground.svg') ;
-    background-size: cover;
+.back {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  background: url("../../assets/colabackground.svg");
+  background-size: cover;
 }
-.header-logo{
-    display: flex;
-    align-items: center;
+.header-logo {
+  display: flex;
+  align-items: center;
 }
-.to-back{
-    font-weight: 500;
-    font-size: 24px;
+.to-back {
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
 }
 .registration-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  flex-direction: column;
 }
 
 .registration-form {
-    background: linear-gradient(180deg, rgba(201, 4, 53, 0.8) 0%, rgba(152, 8, 44, 0.8) 100%);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 90%;
-    max-width: 400px;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(
+    180deg,
+    rgba(201, 4, 53, 0.8) 0%,
+    rgba(152, 8, 44, 0.8) 100%
+  );
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 40%;
 }
 
 .registration-form h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+.regFrom_inpblock {
+  width: 45%;
+}
+.regFrom_inpblock2 {
+  width: 45%;
+  position: relative;
+  margin: 15px 0;
+  text-align: center;
+}
+.regFrom_inpblock2Mob {
+  display: none;
+}
+.regFromInp_file,
+.regFromInp_fileMob {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
 }
 
-.registration-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 15px;
+.regFromInpButton_text,
+.regFromInpButton_textMob {
+  line-height: 1;
+  overflow: hidden;
+  margin-top: 1px;
+}
 
+.regFromFile_button {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: #ffffff50;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 8px rgb(255, 255, 255) dashed;
+}
+.regFromFile_buttonMob {
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  background: #ffffff50;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 90px;
+  cursor: pointer;
+  border: 5px rgb(255, 255, 255) solid;
+}
+.regFrom_inp {
+  width: 100%;
+  height: 2.3rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.regFrom_inp:focus {
+  outline: none;
 }
 
 .registration-form input[type="file"] {
-    padding: 3px;
-
+  padding: 3px;
 }
 
 .registration-form button {
-    background: linear-gradient(180deg, #E1B52B 0%, #9F8122 100%);
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background 0.3s;
-    width: 100%;
+  background: linear-gradient(180deg, #e1b52b 0%, #9f8122 100%);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
 }
 
 .registration-form button:hover {
-    background: #e6b800;
+  background: linear-gradient(180deg, #e6b800 100%, #e6b800 100%);
+  transition: background 0.3s;
 }
 
 .error {
-    color: blue;
-    margin-bottom: 10px;
+  color: #e6b800;
+  margin-bottom: 10px;
 }
 
 .success {
-    color: green;
-    margin-bottom: 10px;
+  color: green;
+  margin-bottom: 10px;
+}
+@media (max-width: 1125px) {
+  .registration-form {
+    width: 70%;
+  }
 }
 
 @media (max-width: 768px) {
-    .registration-form {
-        padding: 15px;
-    }
-
-    .registration-form input {
-        padding: 8px;
-    }
-
-    .registration-form button {
-        padding: 8px 16px;
-    }
+  .registration-form {
+    padding: 15px;
+    flex-direction: column;
+  }
+  .regFrom_inpblock {
+    width: 100%;
+  }
+  .regFrom_inpblock2 {
+    display: none;
+  }
+  .regFrom_inpblock2Mob {
+    display: block;
+  }
 }
 
 @media (max-width: 480px) {
-    .registration-form {
-        padding: 10px;
-
-    }
-
-    .registration-form input {
-        padding: 6px;
-    }
-
-    .registration-form button {
-        padding: 6px 12px;
-    }
+  .registration-form {
+    padding: 15px;
+    flex-direction: column;
+    width: 90%;
+  }
+  .regFrom_inpblock {
+    width: 100%;
+  }
+  .regFrom_inpblock2 {
+    display: none;
+  }
+  .regFrom_inpblock2Mob {
+    display: block;
+  }
 }
