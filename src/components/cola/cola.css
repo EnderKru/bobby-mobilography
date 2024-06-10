@@ -115,34 +115,34 @@
 }
 @media (max-width: 460px) {
   .idea {
-    font-size: 6vmax;
+    font-size: 24px;
     margin-bottom: -10px;
   }
   .torma{
-    font-size: 10vmax;
+    font-size: 40px;
   }
   .gold{
-    font-size: 8vmax;
+    font-size: 36px;
   }
   .bigwhite {
-    font-size: 5vmax;
+    font-size: 24px;
     margin-top: -8px;
   }
 }
 
 @media (max-width: 370px) {
   .idea {
-    font-size: 5vmax;
+    font-size: 20px;
     margin-bottom: -8px;
   }
   .torma{
-    font-size: 9vmax;
+    font-size: 32px;
   }
   .gold{
-    font-size: 7vmax;
+    font-size: 28px;
   }
   .bigwhite {
-    font-size: 4vmax;
+    font-size: 18px;
     margin-top: -8px;
-  } 
+  }
 }
