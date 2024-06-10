@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from "./partners.module.css"
-import lalafo from "../../assets/image/partners/lalafo.png"
-import kia from "../../assets/image/partners/kia.svg"
-import bobby from "../../assets/image/partners/bobby.svg"
+import lalafo from "../../assets/image/lalafo-logo.svg"
+
+import bobby from "../../assets/image/bobby-logo.svg"
 import logo from "../../assets/image/partners/logo.png"
-import coca from "../../assets/image/partners/cocacola.png"
-import samsa from "../../assets/image/partners/samsung-icon-2048x2048-1ej4ectz 1.png"
+import coca from "../../assets/image/cola-logo.svg"
+import samsa from "../../assets/image/samsa-logo.svg"
 function Partners(props) {
     return (
         <div className={styles.partners}>
@@ -29,7 +29,7 @@ function Partners(props) {
             <div className="conteiner">
                 <div className={styles.logos}>
                     <div className={styles.partner}><img src={bobby} alt="logo"/></div>
-                    <div className={styles.partner}><img src={kia} alt="logo"/></div>
+
                     <div className={styles.partner}><img src={coca} alt="logo"/></div>
                     <div className={styles.partner}><img src={samsa} alt="logo"/></div>
                     <div className={styles.partner}><img src={lalafo} alt="logo"/></div>
