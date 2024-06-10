@@ -103,3 +103,15 @@
     font-weight: 600;
   }
 }
+@media (min-width: 1600px) {
+  .tittle h2 {
+    font-size: 100px;
+  }
+  .tittle h1 {
+    font-size: 130px;
+  }
+  .banner-content button {
+    font-size: 36px;
+    padding: 20px 130px;
+  }
+}

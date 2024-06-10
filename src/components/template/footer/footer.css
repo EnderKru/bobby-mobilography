@@ -1,4 +1,9 @@
 .footer{
+
+    max-width: 1900px;
+    margin: 0 auto;
+}
+.footer-wrap {
     background-color: #B4002D;
 }
 .footer-logo{
@@ -30,6 +35,10 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 5px;
+    cursor: pointer;
+}
+.numbers p:hover {
+    text-decoration: underline;
 }
 
 .media-icons{
@@ -91,4 +100,8 @@
         margin-top: 8px;
     }
     
+}
+.main {
+    max-width: 1900px ;
+    margin: 0 auto;
 }

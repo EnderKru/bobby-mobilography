@@ -7,6 +7,7 @@ import insta from '../../../assets/image/instagram.svg'
 
 export function Footer(){
     return(
+        <div className="footer-wrap">
         <div className="footer" id = 'footer'>
             <div className="conteiner">
                 <div className="footer-content">
@@ -34,6 +35,7 @@ export function Footer(){
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

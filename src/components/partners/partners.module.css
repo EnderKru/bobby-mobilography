@@ -51,7 +51,7 @@
 .logos{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
     padding: 104px 0 73px;
 

@@ -34,6 +34,7 @@
   color: goldenrod;
   font-weight: 900;
   font-size: 9vmax;
+  margin-top: 4rem;
 }
 
 .bigwhite {
@@ -115,14 +116,14 @@
 }
 @media (max-width: 460px) {
   .idea {
-    font-size: 6vmax;
+    font-size: 5vmax;
     margin-bottom: -10px;
   }
   .torma{
-    font-size: 10vmax;
+    font-size: 80vmax;
   }
   .gold{
-    font-size: 8vmax;
+    font-size: 5vmax;
   }
   .bigwhite {
     font-size: 5vmax;
@@ -145,4 +146,72 @@
     font-size: 4vmax;
     margin-top: -8px;
   } 
+}
+
+@media (max-width: 570px) {
+  .torma {
+    font-size: 9vmax ;
+  }
+  .idea {
+    font-size: 6vmax;
+  }
+  .bigwhite {
+    font-size: 5vmax;
+  }
+  .gold {
+    font-size: 8vmax;
+  }
+}
+@media (max-width: 505px) {
+  .torma {
+    font-size: 8vmax ;
+  }
+  .idea {
+    font-size: 5vmax;
+  }
+  .bigwhite {
+    font-size: 4vmax;
+  }
+  .gold {
+    font-size: 7vmax;
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 455px) {
+  .torma {
+    font-size: 8vmax ;
+  }
+  .idea {
+    font-size: 5vmax;
+  }
+  .bigwhite {
+    font-size: 5vmax;
+  }
+  .gold {
+    font-size: 8vmax;
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 395px) {
+  .torma {
+    font-size: 8vmax ;
+  }
+  .idea {
+    font-size: 5vmax;
+  }
+  .bigwhite {
+    font-size: 4vmax;
+  }
+  .gold {
+    font-size: 7vmax;
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 335px) {
+
+  .gold {
+    font-size: 6vmax;
+    margin-top: 5rem;
+  }
 }
