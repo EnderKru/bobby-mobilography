@@ -16,7 +16,7 @@
   flex-direction: column;
   /* padding-top: 5vmax;  */
   width: 100%;
-
+  padding-top: 60px;
 }
 .hide {
   display: none;
@@ -84,7 +84,7 @@
 }
 @media (max-width: 950px) {
   .content-2 {
-    margin: 120px 0;
+    margin: 80px 0;
     /* font-size: 70px; */
     font-weight: 800;
   }
@@ -134,7 +134,7 @@
 @media (max-width: 370px) {
   .idea {
     font-size: 5vmax;
-    margin-bottom: -10px;
+    margin-bottom: -8px;
   }
   .torma{
     font-size: 9vmax;

@@ -42,6 +42,7 @@
     .header-item a {
         font-size: 11px !important;
     }
+
 }
 @media (max-width: 370px) {
     .conteiner{
@@ -52,7 +53,7 @@
         width: 30px;
     }
     .header-item a {
-        font-size: 9px !important;
+        font-size: 9px ;
     }
 }
 .custom-tooltip{
@@ -157,10 +158,3 @@ color: #d9d7d7;
 }
     
 }
-
-@media (max-width:470px) {
-    .header-item div{
-        font-size: 9px;
-    }
-        
-    }
