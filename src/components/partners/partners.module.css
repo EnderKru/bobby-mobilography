@@ -93,6 +93,20 @@
     }
 
 }
+@media (max-width:500px){
+    .redBlock img{
+        width: 100px;
+    }
+    .min{
+        font-size: 14px;
+    }
+    
+}
+@media (max-width:425px){
+    .title span{
+        font-size: 28px;
+    }
 
+}
 
 
