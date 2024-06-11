@@ -163,15 +163,26 @@ const RegistrationForm = () => {
                 accept="video/*"
                 onChange={handleFileChange}
               />
-              <label for="regFromInp_fileMob" className="regFromFile_buttonMob">
+              {/* <label for="regFromInp_fileMob" className="regFromFile_buttonMob">
                 <span className="regFromInpButton_textMob">
                   Выберите видеоролик
                 </span>
-              </label>
+              </label> */}
+            </div>          <div>
+              <p>Ссылка на видео</p>
+              <input
+                type="text"
+                name="firstName"
+                placeholder="Введите текст"
+                value={formData.firstName}
+                onChange={handleInputChange}
+                className="regFrom_inp"
+              />
             </div>
             <button type="submit">Отправить</button>
           </div>
-          <div className="regFrom_inpblock2">
+
+          {/* <div className="regFrom_inpblock2">
             <input
               name="file"
               type="file"
@@ -183,7 +194,7 @@ const RegistrationForm = () => {
             <label for="regFromInp_file" class="regFromFile_button">
               <span class="regFromInpButton_text">Выберите видеоролик</span>
             </label>
-          </div>
+          </div> */}
         </form>
       </div>
       <Footer />

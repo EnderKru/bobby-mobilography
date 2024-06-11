@@ -28,11 +28,10 @@ function Partners(props) {
                 </div>
             <div className="conteiner">
                 <div className={styles.logos}>
+                <div className={styles.partner}><img src={coca} alt="logo"/></div>
                     <div className={styles.partner}><img src={bobby} alt="logo"/></div>
-
-                    <div className={styles.partner}><img src={coca} alt="logo"/></div>
-                    <div className={styles.partner}><img src={samsa} alt="logo"/></div>
                     <div className={styles.partner}><img src={lalafo} alt="logo"/></div>
+                    <div className={styles.partner}><img src={samsa} alt="logo"/></div>
                 </div>
             </div>
         </div>
