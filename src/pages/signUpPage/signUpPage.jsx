@@ -46,7 +46,7 @@ const RegistrationForm = () => {
 
     try {
       // Simulate sending data to the server
-      const response = await fetch("https://example.com/api/register", {
+      const response = await fetch("http://217.151.230.35:200/register_mob/", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: { "Content-Type": "application/json" },
@@ -161,7 +161,7 @@ const RegistrationForm = () => {
                 id="regFromInp_fileMob"
                 className="input regFromInp_fileMob"
                 accept="video/*"
-                onChange={handleFileChange}
+                onChange={handleInputChange}
               />
               {/* <label for="regFromInp_fileMob" className="regFromFile_buttonMob">
                 <span className="regFromInpButton_textMob">
@@ -172,9 +172,9 @@ const RegistrationForm = () => {
               <p>Ссылка на видео</p>
               <input
                 type="text"
-                name="firstName"
-                placeholder="Введите текст"
-                value={formData.firstName}
+                name="video"
+                placeholder="Введите ссылку"
+                value={formData.video}
                 onChange={handleInputChange}
                 className="regFrom_inp"
               />
