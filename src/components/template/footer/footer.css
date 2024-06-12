@@ -1,5 +1,5 @@
 .footer{
-    background-color: #B4002D;
+    background-color: var(---main-color);
 }
 .footer-logo{
     display: flex;
@@ -15,7 +15,8 @@
 .footer-content{
     display: flex;
     padding: 20px 0;
-    justify-content: space-between;
+    justify-content: space-between; 
+
 }
 
 .footer-info{
@@ -44,7 +45,25 @@
 .media-icons a img{
     width: 50px;
 }
-
+@media (min-width:1560px) {
+    .footer-logo{
+        display: flex;
+        flex-direction: row;
+    }
+    .mgt{
+        width: 320px;
+    }
+    .dig{
+        width: 230px;
+    }
+    .footer-info h2{
+        font-size: 1.2vmax;
+        max-width: 500px;
+    }
+    .numbers p{
+        font-size: 24px;
+    }
+}
 @media (max-width: 1050px){
     .footer-info{
         width: 200px;

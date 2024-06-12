@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './conditions.module.css';
-import logo from  "../../assets/image/conditions_img/logo.png"
+import logo from  "../../assets/image/MGT-logo.svg"
 import { NavLink } from 'react-router-dom';
 
 function Conditions(props) {
@@ -13,9 +13,9 @@ function Conditions(props) {
                         Условия участия в турнире:
                     </h4>
 
-                    <li className={styles.part}>Участвовать может каждый, абсолютно <br/> бесплатно</li>
-                    <li className={styles.part}>Участники будут должны создать 30-секундный <br/> рекламный ролик о напитке Coca-Cola</li>
-                    <li className={styles.part}>После завершения съемки рекламного ролика, <br/> отправьте его через этот веб-сайт</li>
+                    <div className={styles.part}>Участвовать может каждый, абсолютно <br/> бесплатно</div>
+                    <div className={styles.part}>Участники будут должны создать 30-секундный <br/> рекламный ролик о напитке Coca-Cola</div>
+                    <div className={styles.part}>После завершения съемки рекламного ролика, <br/> отправьте его через этот веб-сайт</div>
                     <NavLink to="/signup">
                     <button className={styles.button}>
                         CТАТЬ УЧАСТНИКОМ

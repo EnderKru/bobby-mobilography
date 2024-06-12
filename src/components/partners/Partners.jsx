@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from "./partners.module.css"
-import lalafo from "../../assets/image/lalafo-logo.svg"
+import lalafo from "../../assets/image/lalafo.svg"
 
 import bobby from "../../assets/image/bobby-logo.svg"
 import logo from "../../assets/image/partners/logo.png"
-import coca from "../../assets/image/cola-logo.svg"
+import coca from "../../assets/image/maxi.svg"
 import samsa from "../../assets/image/samsa-logo.svg"
 function Partners(props) {
     return (
@@ -26,14 +26,17 @@ function Partners(props) {
                         </p>
                     </div>
                 </div>
-            <div className="conteiner">
+                <div className="max-width">
+                <div className="conteiner">
                 <div className={styles.logos}>
+                <div className={styles.partner}><img src={bobby} alt="logo"/></div>
                 <div className={styles.partner}><img src={coca} alt="logo"/></div>
-                    <div className={styles.partner}><img src={bobby} alt="logo"/></div>
+                    
                     <div className={styles.partner}><img src={lalafo} alt="logo"/></div>
-                    <div className={styles.partner}><img src={samsa} alt="logo"/></div>
+
                 </div>
             </div>
+                </div>
         </div>
     );
 }

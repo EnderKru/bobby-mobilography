@@ -1,5 +1,5 @@
 .header{
-    background-color: #B4002D;
+    background-color: var(---main-color);
     max-width: 1950px;
     margin: 0 auto;
 }
@@ -16,7 +16,7 @@
     }
 }
 .container-header {
-    background-color: #B4002D;
+    background-color: var(---main-color);
 
 }
 @media (max-width: 720px) {
@@ -145,7 +145,14 @@
 color: #d9d7d7;
 }
 
-
+@media (min-width:1560px) {
+    .header-item div{
+        font-size: 24px;
+    }
+    .header-logo img{
+        width: 60px;
+    }
+}
 @media (max-width:768px) {
 
     .custom-tooltip{

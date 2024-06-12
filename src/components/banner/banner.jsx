@@ -7,8 +7,10 @@ export function Banner(){
     return(
         <>
         <BanSups/>
-         <div className="banner"  style={{ backgroundImage: `url(${backg})`}}>
+        <div className="max-width">
+        <div className="banner"  style={{ backgroundImage: `url(${backg})`}}>
             <div className="conteiner">
+                <div className="max-width">
                 <div className="banner-content" >
                     <div className="tittle" id='banner'>
                         <h2>
@@ -21,10 +23,12 @@ export function Banner(){
                     <NavLink to='/signup'>
                         <button>УЧАСТВОВАТЬ</button>
                     </NavLink>
-
+                </div>
                 </div>
             </div>
         </div>
+        </div>
+         
         </>
 
     )

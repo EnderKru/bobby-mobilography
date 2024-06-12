@@ -5,8 +5,11 @@
     display: flex;
     justify-content: space-around;
 }
-.bobby{
-    width: 10%;
+.bobby-logo{
+    width: 60%;
+}
+.bobby-logo img{
+    width: 100%;
 }
 .ban-sups-content img{
     width: 20%;
@@ -18,10 +21,18 @@
 .bobby-logo img{
     width: 50%;
 }
+@media (min-width:1560px) {
+    .ban-sups-content{
+        max-width: 1930px;
+    }
+}
 @media (max-width:700px){
     .ban-sups{
         padding: 60px 0;
     }.ban-sups-content img{
+        width: 20%;
+    }
+    .bobby-logo img{
         width: 50%;
     }
 }

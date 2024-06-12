@@ -31,15 +31,26 @@
 }
 
 .gold {
-  color: goldenrod;
+  color: #B0CB1E;
   font-weight: 900;
   font-size: 9vmax;
+  text-shadow: 
+        -1px -1px 0 #fff,  
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff; /* Цвет обводки */
 }
+
 
 .bigwhite {
   font-weight: 800;
   font-size: 6vmax;
   margin-top: -30px;
+  text-shadow: 
+  -4px -4px 0 #B0CB1E,  
+   4px -4px 0 #B0CB1E,
+  -4px  4px 0 #B0CB1E,
+   4px  4px 0 #B0CB1E;
 }
 
 .content-2 {
@@ -59,6 +70,11 @@
   align-items: center;
   font-size: 7vmax;
   margin-bottom: -40px;
+  text-shadow: 
+  -4px -4px 0 #B0CB1E,  
+   4px -4px 0 #B0CB1E,
+  -4px  4px 0 #B0CB1E,
+   4px  4px 0 #B0CB1E;
 }
 .torma {
   display: flex;
@@ -66,6 +82,12 @@
   justify-content: center;
   align-items: center;
   font-size: 12vmax;
+  text-shadow: 
+  -1px -1px 0 #fff,  
+   1px -1px 0 #fff,
+  -1px  1px 0 #fff,
+   1px  1px 0 #fff;
+  color: var(---main-color);
 }
 /* .content-1, .content-2 {
     

@@ -17,13 +17,13 @@
 }
 
 .title .red_text{
-    color: #B4002D;
+    color: var(---main-color);
     margin-left: 10px;
 }
 
 
 .redBlock{
-    background-color: #B4002D;
+    background-color: var(---main-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,14 +36,14 @@
     font-family: "Montserrat Alternates";
     font-size: 28px;
     font-weight: 700;
-    line-height: 42.24px;
+
     text-align: center;
 }
 
 .min{
     font-family: "Montserrat Alternates";
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 25px;
     text-align: center;
 }
@@ -52,14 +52,42 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    padding: 104px 0 73px;
+    padding: 40px 0;
 
 }
 .partner{
-    transform: scale(0.7);
+    /* transform: scale(0.5); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 20px ;
+}
+.partner img{
+    width: 100%;
+
+    
+}
+@media (min-width: 1560px){
+    .title span{
+        font-size:  68px;
+    }
+    .with_logo img{
+        width: 250px;
+    }
+    .sanarip{
+        font-size: 46px;
+    }
+    .min{
+        font-size: 24px;
+    }
 }
 
+@media (max-width:1024px) {
+    .partner{
+        /* transform: scale(0.9); */
+    }
+}
 @media (max-width:768px) {
 
     .logos{

@@ -54,11 +54,11 @@
   font-size: 5rem;
   font-weight: 600;
   margin-left: 10px;
-  color: #b4002d;
+  color: var(---main-color);
 }
 .sapn-tt {
   font-size: 35px;
-  color: #fbb72d;
+  color: #B0CB1E;
 }
 #days,
 #hours {
@@ -72,7 +72,7 @@
 }
 
 .purple-n {
-  color: #b4002d;
+  color: var(---main-color);
   margin-left: 10px;
 }
 
@@ -93,7 +93,14 @@
 .time-unit-n {
   font-size: 73px; /* Размер шрифта для единиц времени */
 }
-
+@media (min-width:1560px){
+  .container-n{
+    max-width: 2060px;
+  }
+  .content-nt{
+    font-size: 5rem;
+  }
+}
 @media (max-width: 950px) {
   .main-containerT {
     transform: scale(0.8);

@@ -1,5 +1,7 @@
 
-
+/* #max-width{
+    max-width: 2060px;
+} */
 .conditions{
     background: url("../../assets/image/conditions_img/camera.png") no-repeat;
     width: 100%;
@@ -12,7 +14,6 @@
     font-family: Montserrat;
     font-size: 33px;
     font-weight: 700;
-    line-height: 51.2px;
     text-align: left;
     margin-top: 74px;
     margin-bottom: 62px;
@@ -26,9 +27,8 @@
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 700;
-    line-height: 32.91px;
     text-align: left;
-    text-indent: -27px;
+
     margin-left: 40px;
 
 
@@ -44,15 +44,26 @@
     font-weight: 700;
     background: none;
     border-radius: 90px;
-    border: #B4002D solid 10px;
+    border: var(---main-color) solid 10px;
     transition: 0.5s;
 }
 
 .button:hover{
-    background-color: #B4002D;
+    background-color: var(---main-color);
 }
 
+@media (min-width: 1560px){
+    .title{
+        font-size: 3vmax;
+    }
+    .part{
+        font-size: 1.2vmax;
 
+    }
+    .button{
+        font-size: 1.3vmax;
+    }
+}
 
 @media (max-width:768px) {
     .conditions__inner{

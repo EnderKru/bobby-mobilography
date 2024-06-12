@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./signUpPage.css"; // Ensure the CSS file is correctly named
 import { NavLink } from "react-router-dom";
 import burger from "../../assets/image/burger-menu.svg";
-import back from "../../assets/colabackground.svg";
+import back from "../../assets/image/maxireg-bg.jpg";
 import { Footer } from "../../components/template/footer/footer.jsx";
 
 const RegistrationForm = () => {
@@ -69,10 +69,13 @@ const RegistrationForm = () => {
       style={{
         backgroundImage: `url(${back})`,
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center center",
+        backgroundPosition: "center",
         backgroundSize: "cover",
+        width: "100%",
+        height: "100%"
       }}
     >
+      <div className="container-header">
       <header className="header">
         <div className="conteiner">
           <div className="header-wrapper">
@@ -105,6 +108,8 @@ const RegistrationForm = () => {
           </div>
         </div>
       </header>
+      </div>
+      
       <div className="registration-container">
         <h1
           style={{
