@@ -165,7 +165,7 @@
   .registration-form button{
     font-size: 30px;
   }
-  .error{
+  .error, .success{
     padding-right: 10px;
     font-size: 1vmax;
     max-width: 30%;
@@ -196,7 +196,7 @@
   .regFrom_inpblock2Mob {
     display: block;
   }
-  .error{
+  .error, .success{
     font-size: 14px;
     font-weight: 700;
     width: 100%;
