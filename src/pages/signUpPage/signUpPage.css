@@ -5,6 +5,9 @@
   /* background: url("../../assets/colabackground.svg");
   background-size: cover; */
 }
+.regFrom_inpblock input {
+  padding: 12px 10px;
+}
 .header-logo {
   display: flex;
   align-items: center;
@@ -94,9 +97,9 @@
   border: 5px rgb(255, 255, 255) solid;
 }
 .regFrom_inp {
-  width: 100%;
+  width: 40vmax;
   height: 2.3rem;
-  padding-left: 1rem;
+
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -136,9 +139,7 @@
   color: green;
   margin-bottom: 10px;
 } 
-.regFrom_inpblock input {
-  padding: 12px 10px;
-}
+
 .error{
   font-size: 14px;
   font-weight: 700;
@@ -175,6 +176,9 @@
 @media (max-width: 1125px) {
   .registration-form {
     width: 70%;
+  }
+  .regFrom_inp{
+    width: 100%;
   }
 }
 

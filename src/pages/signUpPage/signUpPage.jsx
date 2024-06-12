@@ -46,7 +46,7 @@ const RegistrationForm = () => {
 
     try {
       // Simulate sending data to the server
-      const response = await fetch("http://217.151.230.35:200/register_mob/", {
+      const response = await fetch("http://217.151.230.35:200/register_mob", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: { "Content-Type": "application/json" },
