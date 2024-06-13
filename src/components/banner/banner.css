@@ -2,7 +2,6 @@
   background-size: cover;
   width: 100%;
   height: 100%;
-  margin-bottom: 5rem;
 }
 .banner-content {
   display: flex;
@@ -53,6 +52,9 @@
     font-size: 32px;
     font-weight: 700;
     padding: 30px 150px;
+  }
+  .banner{
+    height: 110vh;
   }
 }
 
