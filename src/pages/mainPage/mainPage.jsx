@@ -8,17 +8,15 @@ import Conditions from "../../components/conditions/Conditions.jsx";
 
 export default function MainPage(){
     return(
-        
+        <>
             <PageTemplate>
-                <div className="main">
                 <Banner/>
                 <Timer/>
                 <Cola/>
                 <Conditions/>
 
                 <Partners/>
-                </div>
             </PageTemplate>
-       
+        </>
     )
 }
