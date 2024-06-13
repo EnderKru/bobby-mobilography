@@ -31,16 +31,26 @@
 }
 
 .gold {
-  color: goldenrod;
+  color: #B0CB1E;
   font-weight: 900;
   font-size: 9vmax;
-  margin-top: 4rem;
+  text-shadow: 
+        -1px -1px 0 #fff,  
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff; /* Цвет обводки */
 }
+
 
 .bigwhite {
   font-weight: 800;
   font-size: 6vmax;
   margin-top: -30px;
+  text-shadow: 
+  -4px -4px 0 #B0CB1E,  
+   4px -4px 0 #B0CB1E,
+  -4px  4px 0 #B0CB1E,
+   4px  4px 0 #B0CB1E;
 }
 
 .content-2 {
@@ -60,6 +70,11 @@
   align-items: center;
   font-size: 7vmax;
   margin-bottom: -40px;
+  text-shadow: 
+  -4px -4px 0 #B0CB1E,  
+   4px -4px 0 #B0CB1E,
+  -4px  4px 0 #B0CB1E,
+   4px  4px 0 #B0CB1E;
 }
 .torma {
   display: flex;
@@ -67,6 +82,12 @@
   justify-content: center;
   align-items: center;
   font-size: 12vmax;
+  text-shadow: 
+  -1px -1px 0 #fff,  
+   1px -1px 0 #fff,
+  -1px  1px 0 #fff,
+   1px  1px 0 #fff;
+  color: var(---main-color);
 }
 /* .content-1, .content-2 {
     
@@ -116,36 +137,36 @@
 }
 @media (max-width: 460px) {
   .idea {
-    font-size: 5vmax;
+    font-size: 6vmax;
     margin-bottom: -10px;
   }
   .torma{
-    font-size: 80vmax;
+    font-size: 40px;
   }
   .gold{
-    font-size: 5vmax;
+    font-size: 36px;
   }
   .bigwhite {
-    font-size: 5vmax;
+    font-size: 24px;
     margin-top: -8px;
   }
 }
 
 @media (max-width: 370px) {
   .idea {
-    font-size: 5vmax;
+    font-size: 20px;
     margin-bottom: -8px;
   }
   .torma{
-    font-size: 9vmax;
+    font-size: 32px;
   }
   .gold{
-    font-size: 7vmax;
+    font-size: 28px;
   }
   .bigwhite {
-    font-size: 4vmax;
+    font-size: 18px;
     margin-top: -8px;
-  } 
+  }
 }
 
 @media (max-width: 570px) {

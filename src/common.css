@@ -7,13 +7,17 @@
     padding: 0;
     overflow-x: hidden;
 }
+:root{
+    ---main-color: #0078B5;
+}
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #060307;
+    background-color: #000000;
     color: #FFFFFF;
 }
 .conteiner{
     padding: 0 60px;
+    
 }
 button:active {
     transform: scale(0.95);
@@ -24,6 +28,16 @@ button:active {
     cursor: pointer;
   }
 
+@media (min-width: 1560px) {
+    .conteiner{
+        padding: 0 120px;
+    }
+    .max-width{
+        max-width: 1930px;
+        margin: 0 auto;
+    }
+}  
+ 
 @media (max-width:470px){
     .conteiner{
         padding: 0 20px;

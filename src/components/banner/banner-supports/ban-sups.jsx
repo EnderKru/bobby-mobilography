@@ -6,7 +6,9 @@ import sanarip from '../../../assets/image/sanariplogo.svg'
 export function BanSups(){
     return(
         <div className="ban-sups">
+            
             <div className="conteiner">
+                <div className="max-width">
                 <div className="ban-sups-content">
                     <img src={it} alt="" className="" />
                     <div className="bobby-logo">
@@ -14,6 +16,8 @@ export function BanSups(){
                     </div>
                     <img src={sanarip} alt="" className="" />
                 </div>
+                </div>
+
             </div>
         </div>
     )

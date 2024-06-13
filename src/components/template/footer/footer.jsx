@@ -9,6 +9,7 @@ export function Footer(){
     return(
         <div className="footer-wrap">
         <div className="footer" id = 'footer'>
+            <div className="max-width">
             <div className="conteiner">
                 <div className="footer-content">
                     <div className="footer-logo">
@@ -18,7 +19,7 @@ export function Footer(){
                     <div className="footer-info">
                         <h2>Для связи по коммерческим вопросам:</h2>
                         <div className="numbers">
-                            <p>+996 559 880 208</p>
+                            <p>+996 990 088 589</p>
                             <p>+996 708 032 662</p>
                         </div>
                         <div className="media-icons">
@@ -35,6 +36,8 @@ export function Footer(){
                     </div>
                 </div>
             </div>
+            </div>
+
         </div>
         </div>
     )

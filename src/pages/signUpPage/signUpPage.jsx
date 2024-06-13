@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import "./signUpPage.css"; // Ensure the CSS file is correctly named
 import { NavLink } from "react-router-dom";
-import burger from "../../assets/image/burger-menu.svg";
-import back from "../../assets/colabackground.svg";
+import back from "../../assets/image/maxireg-bg.jpg";
 import { Footer } from "../../components/template/footer/footer.jsx";
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    phone: "",
-    video: null,
+    name: "",
+    surname: "",
+    phone_number: "",
+    project_link: "",
   });
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
@@ -20,174 +19,146 @@ const RegistrationForm = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    if (file && file.size <= 134217728) {
-      // 128 MB in bytes
-      setFormData({ ...formData, video: file });
-      setError("");
-    } else {
-      setError("Размер видео не должен превышать 128 МБ");
-    }
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Simple validation
-    if (
-      !formData.firstName ||
-      !formData.lastName ||
-      !formData.phone ||
-      !formData.video
-    ) {
+    if (!formData.name || !formData.surname || !formData.phone_number || !formData.project_link) {
       setError("Все поля обязательны для заполнения!");
       return;
     }
 
     try {
-      // Simulate sending data to the server
-      const response = await fetch("https://example.com/api/register", {
+      console.log("Sending data:", formData); // Log the data being sent
+      const response = await fetch("http://217.151.230.35:200/register_mob/", {
         method: "POST",
-        body: JSON.stringify(formData),
         headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
         setSuccess(true);
         setTimeout(() => (window.location.href = "/"), 3000); // Redirect to the homepage after 3 seconds
       } else {
-        setError("Произошла ошибка при регистрации");
+        const errorData = await response.json(); // Try to get additional error information
+        setError(`Произошла ошибка при регистрации: ${errorData.message || response.statusText}`);
       }
     } catch (err) {
+      console.error("Error during fetch:", err);
       setError("Произошла ошибка при регистрации");
     }
   };
 
   return (
-    <div
-      className="back"
-      style={{
-        backgroundImage: `url(${back})`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center center",
-        backgroundSize: "cover",
-      }}
-    >
-      <header className="header">
-        <div className="conteiner">
-          <div className="header-wrapper">
-            <div className="header-logo">
-              <NavLink
-                to="/"
-                style={{
-                  textDecoration: "none",
-                  color: "white",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-chevron-left"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
-                  />
-                </svg>
-                <span className="to-back">На главную</span>
-              </NavLink>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div className="registration-container">
-        <h1
+      <div
+          className="back"
           style={{
-            justifyContent: "center",
-            textAlign: "center",
-            margin: "20px",
+            backgroundImage: `url(${back})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            width: "100%",
+            height: "100%",
           }}
-        >
-          РЕГИСТРАЦИЯ
-        </h1>
-        <form className="registration-form" onSubmit={handleSubmit}>
-          {error && <div className="error">{error}</div>}
-          {success && (
-            <div className="success">Регистрация прошла успешно!</div>
-          )}
-          <div className="regFrom_inpblock">
-            <div>
-              <p>Имя</p>
-              <input
-                type="text"
-                name="firstName"
-                placeholder="Введите текст"
-                value={formData.firstName}
-                onChange={handleInputChange}
-                className="regFrom_inp"
-              />
+      >
+        <div className="container-header">
+          <header className="header">
+            <div className="conteiner">
+              <div className="header-wrapper">
+                <div className="header-logo">
+                  <NavLink
+                      to="/"
+                      style={{
+                        textDecoration: "none",
+                        color: "white",
+                        display: "flex",
+                        alignItems: "center",
+                      }}
+                  >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        className="bi bi-chevron-left"
+                        viewBox="0 0 16 16"
+                    >
+                      <path
+                          fillRule="evenodd"
+                          d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                      />
+                    </svg>
+                    <span className="to-back">На главную</span>
+                  </NavLink>
+                </div>
+              </div>
             </div>
-            <div>
-              <p>Фамилия</p>
-              <input
-                type="text"
-                name="lastName"
-                placeholder="Введите текст"
-                value={formData.lastName}
-                onChange={handleInputChange}
-                className="regFrom_inp"
-              />
+          </header>
+        </div>
+
+        <div className="registration-container">
+          <h1
+              style={{
+                justifyContent: "center",
+                textAlign: "center",
+                margin: "20px",
+              }}
+          >
+            РЕГИСТРАЦИЯ
+          </h1>
+          <form className="registration-form" onSubmit={handleSubmit}>
+            {error && <div className="error">{error}</div>}
+            {success && <div className="success">Регистрация прошла успешно!</div>}
+            <div className="regFrom_inpblock">
+              <div>
+                <p>Имя</p>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Введите текст"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="regFrom_inp"
+                />
+              </div>
+              <div>
+                <p>Фамилия</p>
+                <input
+                    type="text"
+                    name="surname"
+                    placeholder="Введите текст"
+                    value={formData.surname}
+                    onChange={handleInputChange}
+                    className="regFrom_inp"
+                />
+              </div>
+              <div>
+                <p>Номер телефона</p>
+                <input
+                    type="text"
+                    name="phone_number"
+                    placeholder="+996 999 777 999"
+                    value={formData.phone_number}
+                    onChange={handleInputChange}
+                    className="regFrom_inp"
+                />
+              </div>
+              <div>
+                <p>Ссылка на видео</p>
+                <input
+                    type="text"
+                    name="project_link"
+                    placeholder="Введите ссылку"
+                    value={formData.project_link}
+                    onChange={handleInputChange}
+                    className="regFrom_inp"
+                />
+              </div>
+              <button type="submit">Отправить</button>
             </div>
-            <div>
-              <p>Номер телефона</p>
-              <input
-                type="text"
-                name="phone"
-                placeholder="+996 999 777 999"
-                value={formData.phone}
-                onChange={handleInputChange}
-                className="regFrom_inp"
-              />
-            </div>{" "}
-            <div className="regFrom_inpblock2Mob">
-              <input
-                name="file"
-                type="file"
-                id="regFromInp_fileMob"
-                className="input regFromInp_fileMob"
-                accept="video/*"
-                onChange={handleFileChange}
-              />
-              <label for="regFromInp_fileMob" className="regFromFile_buttonMob">
-                <span className="regFromInpButton_textMob">
-                  Выберите видеоролик
-                </span>
-              </label>
-            </div>
-            <button type="submit">Отправить</button>
-          </div>
-          <div className="regFrom_inpblock2">
-            <input
-              name="file"
-              type="file"
-              id="regFromInp_file"
-              class="input regFromInp_file"
-              accept="video/*"
-              onChange={handleFileChange}
-            />
-            <label for="regFromInp_file" class="regFromFile_button">
-              <span class="regFromInpButton_text">Выберите видеоролик</span>
-            </label>
-          </div>
-        </form>
+          </form>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
   );
 };
 

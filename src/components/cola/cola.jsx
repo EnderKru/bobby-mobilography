@@ -1,6 +1,6 @@
 import "./cola.css";
 import React from "react";
-import backgr from "../../assets/backgraunds/cola-backgr.svg";
+import backgr from "../../assets//image/maxi-bg.jpg";
 
 export function Cola() {
   // const content1 = document.querySelector('.content-1');

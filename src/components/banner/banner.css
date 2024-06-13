@@ -11,21 +11,22 @@
   width: 100%;
   align-items: center;
   padding: 150px 0;
+  max-width: 2040px;
 }
 .banner-content button {
   padding: 20px 120px;
   width: fit-content;
-  border: 3px #e4b72b solid;
+  border: 2px var(---main-color) solid;
   border-radius: 90px;
   font-size: 18px;
   font-weight: 600;
   color: #fff;
-  background-color: transparent;
+  background-color: var(---main-color);
   transition: 0.5s;
 }
 
 .banner-content button:hover {
-  background: #e1b52b;
+  background: #006BA0;
 }
 .tittle {
   margin-bottom: 350px;
@@ -37,24 +38,25 @@
 .tittle h1 {
   font-size: 86px;
   font-family: "MuseoModerno", sans-serif;
-  color: #b4002d;
+  color: var(---main-color);
 }
-@media (max-width: 867px) {
-  .tittle h1 {
-    font-size: 70px;
-  }
+@media (min-width:1560px) {
   .tittle h2 {
-    font-size: 28px;
-    margin-bottom: -25px;
+    font-size: 64px;
+  }
+  .tittle h1 {
+    font-size: 128px;
+
   }
   .banner-content button {
-    padding: 18px 120px;
-    border: 5px #e4b72b solid;
-  }
-  .tittle {
-    margin-bottom: 180px;
+    padding: 20px 120px;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 30px 150px;
   }
 }
+
+
 @media (max-width: 768px) {
   .tittle h1 {
     font-size: 50px;
@@ -65,7 +67,7 @@
   }
   .banner-content button {
     padding: 14px 100px;
-    border: 5px #e4b72b solid;
+
   }
   .tittle {
     margin-bottom: 180px;
@@ -97,7 +99,7 @@
   .banner-content button {
     padding: 12px 80px;
 
-    border: 6px #e4b72b solid;
+
     border-radius: 90px;
     font-size: 14px;
     font-weight: 600;
