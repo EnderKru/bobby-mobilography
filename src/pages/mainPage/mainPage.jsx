@@ -8,7 +8,7 @@ import Conditions from "../../components/conditions/Conditions.jsx";
 
 export default function MainPage(){
     return(
-        <div className="main">
+        <>
             <PageTemplate>
                 <Banner/>
                 <Timer/>
@@ -17,6 +17,6 @@ export default function MainPage(){
 
                 <Partners/>
             </PageTemplate>
-        </div>
+        </>
     )
 }
