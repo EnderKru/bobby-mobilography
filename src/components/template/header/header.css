@@ -2,6 +2,8 @@
     background-color: var(---main-color);
     max-width: 1950px;
     margin: 0 auto;
+    z-index: 10;
+    
 }
 .header-wrapper{
     display: flex;

@@ -19,8 +19,8 @@ export function Footer(){
                     <div className="footer-info">
                         <h2>Для связи по коммерческим вопросам:</h2>
                         <div className="numbers">
-                            <p>+996 990 088 589</p>
-                            <p>+996 708 032 662</p>
+                            <p>+996 990 111 414</p>
+                            <p id='foot-num'>+996 705 081 688</p>
                         </div>
                         <div className="media-icons">
                             <a href="">
