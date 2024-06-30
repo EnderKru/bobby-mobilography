@@ -201,7 +201,7 @@
   .error, .success{
     font-size: 14px;
     font-weight: 700;
-    width: 100%;
+    max-width: 100%;
   }
 }
 
