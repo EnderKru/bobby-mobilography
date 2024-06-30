@@ -157,7 +157,6 @@ const RegistrationForm = () => {
             </div>
           </form>
         </div>
-        <Footer />
       </div>
   );
 };

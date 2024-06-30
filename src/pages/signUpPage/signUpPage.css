@@ -159,7 +159,9 @@
   }
   .regFrom_inpblock input {
     font-size: 28px;
-    padding: 16 10px;
+    padding: 16px 10px;
+    height: 4rem;
+    width: 50rem;
   }
   
   .registration-form button{

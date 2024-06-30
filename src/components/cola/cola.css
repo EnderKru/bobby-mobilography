@@ -46,11 +46,7 @@
   font-weight: 800;
   font-size: 6vmax;
   margin-top: -30px;
-  text-shadow: 
-  -4px -4px 0 #B0CB1E,  
-   4px -4px 0 #B0CB1E,
-  -4px  4px 0 #B0CB1E,
-   4px  4px 0 #B0CB1E;
+
 }
 
 .content-2 {
@@ -70,11 +66,14 @@
   align-items: center;
   font-size: 7vmax;
   margin-bottom: -40px;
+
+}
+.idea, .bigwhite{
   text-shadow: 
-  -4px -4px 0 #B0CB1E,  
-   4px -4px 0 #B0CB1E,
-  -4px  4px 0 #B0CB1E,
-   4px  4px 0 #B0CB1E;
+  -2px -2px 0 #B0CB1E,  
+   2px -2px 0 #B0CB1E,
+  -2px  2px 0 #B0CB1E,
+   2px  2px 0 #B0CB1E;
 }
 .torma {
   display: flex;
@@ -103,6 +102,16 @@
   opacity: 1;
   transform: translateY(0);
 }
+@media (min-width: 1920px){
+  .idea, .bigwhite{
+    text-shadow: 
+    -4px -4px 0 #B0CB1E,  
+     4px -4px 0 #B0CB1E,
+    -4px  4px 0 #B0CB1E,
+     4px  4px 0 #B0CB1E;
+  }
+}
+
 @media (max-width: 950px) {
   .content-2 {
     margin: 80px 0;
@@ -135,7 +144,7 @@
     margin-top: -10px;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 520px) {
   .idea {
     font-size: 6vmax;
     margin-bottom: -10px;
@@ -149,6 +158,13 @@
   .bigwhite {
     font-size: 24px;
     margin-top: -8px;
+  }
+  .idea, .bigwhite{
+    text-shadow: 
+    -1px -1px 0 #B0CB1E,  
+     1px -1px 0 #B0CB1E,
+    -1px  1px 0 #B0CB1E,
+     1px  1px 0 #B0CB1E;
   }
 }
 

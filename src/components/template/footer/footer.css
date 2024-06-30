@@ -8,9 +8,7 @@
     width: 250px;
     margin-bottom: 10px;
 }
-#foot-num {
-    font-size: 1.16rem !important;
-}
+
 .dig{
     width: 150px;
 }
@@ -33,7 +31,10 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 5px;
-    cursor: pointer;
+    cursor: copy;
+}
+#foot-num {
+    font-size: 1.16rem ;
 }
 .numbers p:hover {
     text-decoration: underline;
@@ -50,6 +51,22 @@
 }
 .media-icons a img{
     width: 50px;
+}
+.copy-message {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #B0CB1E;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    display: flex;
+    align-items:center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 12px;
+
 }
 @media (min-width:1560px) {
     .footer-logo{
@@ -68,6 +85,9 @@
     }
     .numbers p{
         font-size: 24px;
+    }
+    #foot-num {
+        font-size: 22px ;
     }
 }
 @media (max-width: 1050px){
@@ -95,6 +115,9 @@
     .media-icons a img{
         width: 35px;
     }
+    #foot-num {
+        font-size: 15px;
+    }
 }
 
 @media (max-width:470px){
@@ -115,7 +138,9 @@
     .media-icons{
         margin-top: 8px;
     }
-    
+    #foot-num {
+        font-size: 11px;
+    }
 }
 .main {
     max-width: 1900px ;
