@@ -63,7 +63,7 @@ const RegistrationForm = () => {
         <div className="container-header">
           <header className="header">
             <div className="conteiner">
-              <div className="header-wrapper">
+              <div className="header-wrapper" id="signup-header">
                 <div className="header-logo">
                   <NavLink
                       to="/"
